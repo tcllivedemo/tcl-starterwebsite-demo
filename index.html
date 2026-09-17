@@ -380,6 +380,63 @@
   }
 }
 
+
+/* ========== EXACT MOBILE HIGHLIGHTS + FOOTER DESCRIPTION FIX ========== */
+@media (max-width:640px){
+  /* The four About check items: exactly 2 per row */
+  .highlights{
+    display:grid !important;
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+    gap:10px !important;
+    width:100% !important;
+  }
+  .highlights .highlight{
+    display:grid !important;
+    grid-template-columns:22px minmax(0,1fr) !important;
+    align-items:start !important;
+    column-gap:7px !important;
+    width:100% !important;
+    min-width:0 !important;
+    margin:0 !important;
+    padding:11px 8px !important;
+    font-size:.74rem !important;
+    line-height:1.3 !important;
+  }
+  .highlights .highlight svg{
+    width:20px !important;
+    height:20px !important;
+    min-width:20px !important;
+  }
+
+  /* Center the footer business description and keep it aligned with footer content */
+  .footer__about,
+  .footer__desc,
+  .footer__grid > div:first-child p{
+    text-align:center !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    max-width:440px !important;
+  }
+}
+
+@media (max-width:360px){
+  .highlights{
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+    gap:7px !important;
+  }
+  .highlights .highlight{
+    grid-template-columns:18px minmax(0,1fr) !important;
+    column-gap:5px !important;
+    padding:9px 6px !important;
+    font-size:.67rem !important;
+  }
+  .highlights .highlight svg{
+    width:17px !important;
+    height:17px !important;
+    min-width:17px !important;
+  }
+}
+
 </style></head>
 <body>
 <!-- ============ HEADER / NAV ============ --><header class="header" id="header">  <div class="container header__inner">    <a class="brand" href="#home" aria-label="Amihan Aircon Care — home">      <span class="brand__mark" aria-hidden="true">        <!-- Logo mark. Swap for the client's logo file: <img src="images/logo.svg" alt="Amihan Aircon Care"> -->        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round">          <path d="M3 8h13a3 3 0 1 0-3-3"/><path d="M3 13h16a3 3 0 1 1-3 3"/><path d="M3 18h8"/>        </svg>      </span>      <span class="brand__text">        <span class="brand__name">Amihan Aircon Care</span>        <span class="brand__tag">Bacoor • Cavite</span>      </span>    </a>
